@@ -1,5 +1,7 @@
 # UniAuth OAuth OIDC Provider
 
+[![GitHub Packages](https://img.shields.io/static/v1?label=GitHub%20Packages&message=%40alyldas%2Funiauth-oauth-oidc-provider&color=24292f&logo=github)](https://github.com/users/alyldas/packages/npm/package/uniauth-oauth-oidc-provider)
+
 `@alyldas/uniauth-oauth-oidc-provider` exposes a small SDK-free contract for OAuth and OIDC
 provider adapters. It maps a validated provider profile into a UniAuth `ProviderIdentityAssertion`
 and delegates account decisions to the existing UniAuth core flow.
@@ -11,6 +13,14 @@ redirect URI policy, PKCE storage, provider secrets, HTTP clients, token persist
 revocation.
 
 ## Install
+
+Configure the GitHub Packages registry for the package scope before installing:
+
+```ini
+@alyldas:registry=https://npm.pkg.github.com
+```
+
+GitHub Packages can require authentication for package reads. Use a token with `read:packages` in local npm config or CI secrets; do not commit tokens.
 
 ```bash
 npm install @alyldas/uniauth-core @alyldas/uniauth-oauth-oidc-provider

@@ -19,7 +19,13 @@ concurrency:
 jobs:
   analyze:
     name: Analyze
-    runs-on: ubuntu-latest
+    runs-on:
+      - self-hosted
+      - linux
+      - x64
+      - node22
+      - uniauth
+      - ci
     timeout-minutes: 20
     steps:
       - name: Checkout
